@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticaret</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>E-TİCARET</h1>
+      <input type="text" placeholder="ürün ismi giriniz" />
+      <div class="buttons">
+        <button id="sepet">Sepet</button>
+        <button>Kayıt Ol</button>
+        <button>Giriş Yap</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Kategoriler -->
+      <section id="category-wrapper">
+        <h1>Kategoriler</h1>
+        <div class="category-list"></div>
+      </section>
+
+      <!-- Ürünler -->
+      <section class="product-wrapper">
+        <h1>Ürünler</h1>
+        <div class="product-list"></div>
+      </section>
+
+      <div id="modal-wrapper">
+        <div class="modal">
+          <img id="close-btn" src="/image/close1.png" />
+          <h1 class="modal-title">SEPET</h1>
+
+          <div class="modal-list"></div>
+          <p class="toplam-wrapper">
+            Toplam Fiyat: <span id="toplam">5000</span>$
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- js  -->
+    <script src="main.js"></script>
+  </body>
+</html>
